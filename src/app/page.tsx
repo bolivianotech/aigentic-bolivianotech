@@ -3,15 +3,14 @@ import { BarChart3, MessageCircle, Workflow } from "lucide-react"
 import { AnimatedGradientText } from "@/components/ui/animated-gradient-text"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { Particles } from "@/components/ui/particles"
+import { AgendarCita } from "@/components/landing/agendar-cita"
 import { CtaButton } from "@/components/landing/cta-button"
 import { IsotipoAnimado } from "@/components/landing/isotipo-animado"
 import { LogoMarquee } from "@/components/landing/logo-marquee"
 import { MotionProvider } from "@/components/landing/motion-provider"
 import { Nav } from "@/components/landing/nav"
 import { basePath } from "@/lib/base-path"
-
-// TODO: reemplazar por el enlace real de contacto (p. ej. https://wa.me/591XXXXXXXX o mailto:...)
-const CONTACTO_URL = "#contacto"
+import { CALENDAR_BOOKING_URL, WHATSAPP_URL } from "@/lib/contacto"
 
 const servicios = [
   {
@@ -248,10 +247,14 @@ export default function Home() {
                 Cuéntanos qué tarea le quita más tiempo a tu equipo y te mostramos cómo un agente puede resolverla.
               </p>
             </BlurFade>
-            <BlurFade inView delay={0.3} className="mt-10 flex justify-center">
-              <CtaButton href={CONTACTO_URL} variant="light">
-                Hablemos
-              </CtaButton>
+            <BlurFade inView delay={0.3} className="mt-10">
+              <AgendarCita />
+              <div className="mt-8 flex flex-col items-center gap-3">
+                {CALENDAR_BOOKING_URL && <p className="text-sm text-gris">¿Prefieres escribirnos?</p>}
+                <CtaButton href={WHATSAPP_URL} variant="light">
+                  Hablemos por WhatsApp
+                </CtaButton>
+              </div>
             </BlurFade>
           </div>
         </section>
