@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-// Con dominio propio (public/CNAME) el sitio vive en la raíz; solo definir NEXT_PUBLIC_BASE_PATH si se sirve bajo /<repo>.
+// Se sirve bajo /<repo> (GitHub Pages de proyecto); el workflow define NEXT_PUBLIC_BASE_PATH. En local queda vacío.
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const nextConfig: NextConfig = {

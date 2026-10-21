@@ -1,4 +1,4 @@
-export const WHATSAPP_URL = "https://wa.me/19142223263"
+export const WHATSAPP_URL = "https://wa.me/59162847755"
 
 // URL de la página de reservas de Google Calendar (Calendar → Crear → Página de reservas → Compartir).
 // Debe ser la URL de incrustación: https://calendar.google.com/calendar/appointments/schedules/<ID>?gv=true

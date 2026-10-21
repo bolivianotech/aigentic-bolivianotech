@@ -4,7 +4,7 @@ Inteligencia con raíces.
 
 Landing en Next.js + Tailwind con efectos de [Magic UI](https://magicui.design) (degradé animado, partículas, marquee de logos, blur-fade y shimmer button), siguiendo el estándar de marca monocromático.
 
-**Sitio:** https://bolivianotech.github.io/aigentic-bolivianotech/
+**Sitio:** https://bolivianotech.github.io/aigentic-bolivianotech/ (también bajo el dominio propio de la organización: https://www.bolivianotech.com/aigentic-bolivianotech/)
 
 ## Desarrollo local
 
